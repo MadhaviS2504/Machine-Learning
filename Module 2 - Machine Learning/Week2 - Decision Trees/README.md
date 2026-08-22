@@ -1,25 +1,99 @@
-# Week 2 — Decision Trees
+# Week 2 — Decision Trees & Classification
 
-Summary
+## Overview
 
-This week focuses on decision tree algorithms for classification and regression, hyperparameter tuning, pruning, and interpreting feature importance.
+This week focuses on decision tree algorithms and classification techniques. You'll learn how to build and optimize decision tree models, understand tree-based feature importance, and explore classification metrics specific to binary and multi-class problems.
 
-Key files
+## Topics Covered
 
-- `Hands_on_Decision_Tree_Notebook.ipynb` — Step-by-step decision tree examples and evaluation.
-- `MLS/MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb` — Case study predicting machine failure using sensor data.
-- `Decision Tree - Additional Case Study/W2_Additional_CaseStudy_Loan_Delinquent_Notebook.ipynb` — Business-context problem on loan delinquency.
-- `credit_card_approval.csv`, `machine_failure_data.csv`, `Loan_Delinquent_Dataset.csv` — Example datasets used in notebooks.
+- **Decision Tree Fundamentals**
+  - Understanding tree structure: nodes, splits, and leaves
+  - Information gain and impurity measures (Gini, Entropy)
+  - Decision boundaries and tree depth
 
-How to run
+- **Building Decision Trees**
+  - Recursive binary splitting algorithm
+  - Handling both classification and regression tasks with trees
+  - Feature importance ranking from trees
 
-Install required packages as in Week 1, then open notebooks in Jupyter.
+- **Hyperparameter Tuning & Optimization**
+  - Tree depth (`max_depth`) and leaf size (`min_samples_leaf`) tuning
+  - Cost complexity pruning to prevent overfitting
+  - Grid search and parameter optimization strategies
 
-Highlights to mention to recruiters
+- **Model Validation & Evaluation**
+  - Cross-validation techniques for robust performance estimation
+  - Classification metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC
+  - Confusion matrix interpretation and threshold analysis
+  - Overfitting detection and mitigation strategies
 
-- Built and tuned decision tree models; demonstrated cross-validation and pruning to avoid overfitting.
-- Interpreted feature importance and translated results into business recommendations for a loan-delinquency case study.
+- **Business Applications**
+  - Feature importance interpretation for decision-making
+  - Model transparency and explainability in trees
+  - Real-world case studies: Machine failure prediction, Loan delinquency
 
-Skills & Tools
+- **Logistic Regression** (Additional Material)
+  - Introduction to probabilistic classification
+  - Sigmoid function and decision boundaries
+  - Binary classification with logistic regression
 
-- Decision Trees, scikit-learn, cross-validation, model evaluation, Jupyter
+## Key Projects & Datasets
+
+- **Hands_on_Decision_Tree_Notebook.ipynb** — Step-by-step decision tree examples and evaluation
+- **credit_card_approval.csv** — Credit approval prediction dataset for classification
+- **MLS (Multiple Learning Scenarios)** — `MLS2_Decision_Tree_Machine_Failure_Prediction_Notebook.ipynb` (predicting machine failures using sensor data)
+- **Decision Tree - Additional Case Study** — `W2_Additional_CaseStudy_Loan_Delinquent_Notebook.ipynb` (business-context problem on loan delinquency prediction)
+- **W2 - Additional Material - Logistic Regression** — Supplementary content on logistic regression and probability-based classification
+- **Decision Trees.pdf** — Theoretical reference material
+
+## Skills & Tools
+
+- **Languages & Libraries**: Python, pandas, NumPy, scikit-learn
+- **Algorithms**: Decision Trees, Logistic Regression
+- **Validation**: Cross-validation, hyperparameter tuning (GridSearchCV, RandomizedSearchCV)
+- **Visualization**: matplotlib, seaborn, tree visualization tools
+- **Environment**: Jupyter Notebooks
+
+## How to Run
+
+1. Create a virtual environment and install required packages (same as Week 1):
+
+```bash
+python -m venv venv
+venv\Scripts\activate  # On macOS/Linux: source venv/bin/activate
+pip install jupyter pandas numpy scikit-learn matplotlib seaborn
+```
+
+2. Launch Jupyter and explore the notebooks:
+
+```bash
+jupyter notebook
+```
+
+3. Follow the learning sequence:
+   - Start with `Hands_on_Decision_Tree_Notebook.ipynb` for fundamentals
+   - Review the machine failure case study in `MLS/`
+   - Apply concepts to the loan delinquency problem in `Decision Tree - Additional Case Study/`
+   - Explore logistic regression in `W2 - Additional Material - Logistic Regression/`
+
+## Key Learnings & Takeaways
+
+- ✅ Built and tuned decision tree models with optimal hyperparameters
+- ✅ Demonstrated cross-validation and pruning techniques to prevent overfitting
+- ✅ Interpreted feature importance and translated results into business recommendations
+- ✅ Applied classification metrics to evaluate model performance comprehensively
+- ✅ Solved real-world problems: Machine failure prediction, Loan delinquency assessment
+- ✅ Understood the trade-offs between model complexity and interpretability
+
+## Highlights to Mention to Recruiters
+
+- Developed end-to-end classification pipelines using decision trees
+- Applied advanced techniques: hyperparameter tuning, cross-validation, and pruning
+- Interpreted feature importance for business decision-making
+- Worked with imbalanced datasets and class-specific metrics
+- Built transparent, explainable models for critical business domains (finance, manufacturing)
+- Demonstrated understanding of both tree-based and probabilistic classification methods
+
+## Next Steps
+
+After mastering decision trees and classification, you'll explore **Week 3 - Clustering**, which introduces unsupervised learning and customer segmentation techniques.
